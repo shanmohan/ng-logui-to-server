@@ -6,35 +6,32 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <!-- endbower -->
     <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
+
   </head>
-  <body>
+  <body ng-app="app">
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
 
-    <div class="hero-unit">
+    <div class="hero-unit" ng-controller="TestController">
       <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
+      <p>You ############### now have</p>
       <ul>
         <li><a href="https://html5boilerplate.com/">HTML5 Boilerplate</a></li>
       </ul>
     </div>
 
 
-    <!-- build:js(.) scripts/vendor.js -->
+    <!-- build:js(.) bin/vendor.js -->
     <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/angular/angular.js"></script>
     <script src="/bower_components/stacktrace-js/stacktrace.js"></script>
     <!-- endbower -->
@@ -42,14 +39,16 @@
 
 
 
-    <!-- build:js scripts/main.js -->
+    <!-- build:js bin/ek-logger.js -->
     <!--Logging -->
-    <script src="scripts/module/logging.module.js"></script>
-    <script src="scripts/service/logging.service.js"></script>
-    <script src="scripts/service/exception-logging.service.js"></script>
-    <script src="scripts/provider/logging.provider.js"></script>
-    <script src="scripts/service/interceptor-logging.service.js"></script>
-    <script src="scripts/config/interceptor-logging.config.js"></script>
+    <!--<script src="scripts/module/logging.module.js"></script>-->
+    <!--<script src="scripts/service/logging.service.js"></script>-->
+    <!--<script src="scripts/service/exception-logging.service.js"></script>-->
+    <!--<script src="scripts/provider/logging.provider.js"></script>-->
+    <!--<script src="scripts/service/interceptor-logging.service.js"></script>-->
+    <!--<script src="scripts/config/interceptor-logging.config.js"></script>-->
+    <script src="dist/bin/ek-logger.js"></script>
+    <script src="app.js"></script>
     <!-- endbuild -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
