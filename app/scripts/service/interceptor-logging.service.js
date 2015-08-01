@@ -7,7 +7,7 @@
 
 (function () {
 
-    angular.module('logger').factory('interceptorService',interceptorService );
+    angular.module('ek.logger').factory('interceptorService',interceptorService );
 
     interceptorService.$inject = ['$q','logService'];
 

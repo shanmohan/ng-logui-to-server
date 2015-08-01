@@ -9,6 +9,6 @@
 
 (function(){
 
-    angular.module('logger', []);
+    angular.module('ek.logger', []);
 
 })();

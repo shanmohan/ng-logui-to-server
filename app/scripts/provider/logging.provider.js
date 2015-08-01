@@ -10,7 +10,7 @@
 (function(){
 
     //Overrides angular's default exception handler with out loggingService
-    angular.module('logger').provider('$exceptionHandler', {
+    angular.module('ek.logger').provider('$exceptionHandler', {
             $get: function (exceptionLoggingService) {
                 return (exceptionLoggingService);
             }

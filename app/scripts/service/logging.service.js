@@ -8,7 +8,7 @@
 
 (function(){
 
-    angular.module('logger').factory('logService', logService);
+    angular.module('ek.logger').factory('logService', logService);
 
     logService.$inject = ['$log','$window'];
 

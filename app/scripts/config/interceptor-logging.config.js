@@ -7,7 +7,7 @@
 
 (function(){
 
-    angular.module('logger').config(interceptorConfig);
+    angular.module('ek.logger').config(interceptorConfig);
 
     interceptorConfig.$inject = ['$httpProvider'];
 
