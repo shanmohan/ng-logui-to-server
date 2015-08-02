@@ -1,5 +1,5 @@
 {
-  "name": "ng-logui-to-server",
+  "name": "ek-ui-logger",
   "private": true,
   "dependencies": {
     "angular": "~1.x",
